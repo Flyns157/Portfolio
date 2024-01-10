@@ -1,494 +1,529 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout.html" %}
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+{% block head %}
+{{ super() }}
+{% endblock %}
 
-  <title>DevFolio Bootstrap Portfolio Template - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/test_esquice-finale-Copie.ico" rel="icon">
-  <link href="assets/img/test_esquice-finale-Copie.ico" rel="apple-touch-icon">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: DevFolio
-  * Updated: Jan 09 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">@CuissetMattéo/</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
-          <li><a class="nav-link scrollto" href="#about">à propos</a></li>
-          <li><a class="nav-link scrollto" href="#work">Projets</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/4ae5d095e6d2488902b0b9476d38e2fa.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <p class="display-3 color-d">Salut !</p>
-          <h1 class="hero-title mb-4">Je suis <b>Cuisset Mattéo</b></h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Développer web, Développer Fullstack, Étudiant"></span></p>
-          <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">En savoir plus 
+{% block content %}
+<!-- ======= Hero Section ======= -->
+<div id="hero" class="hero route bg-image"
+  style="background-image: url(assets/img/4ae5d095e6d2488902b0b9476d38e2fa.jpg)">
+  <div class="overlay-itro"></div>
+  <div class="hero-content display-table">
+    <div class="table-cell">
+      <div class="container">
+        <p class="display-3 color-d">Salut !</p>
+        <h1 class="hero-title mb-4">Je suis <b>Cuisset Mattéo</b></h1>
+        <p class="hero-subtitle"><span class="typed"
+            data-typed-items="Développer web, Développer Fullstack, Étudiant"></span></p>
+        <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">En savoir plus
             <img src="/assets/img/1217938.svg" alt="flèche" style="height: 20px;">
           </a></p>
-        </div>
       </div>
     </div>
-  </div><!-- End Hero Section -->
+  </div>
+</div><!-- End Hero Section -->
 
-  <main id="main">
+<main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/photo.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Nom: </span> <span>Cuisset Mattéo</span></p>
-                        <p><span class="title-s">Profile: </span> <span>déveloper fullstack</span></p>
-                        <p><span class="title-s">Email: </span> <span>matteo.cuisset@gmail.com</span></p>
-                        <p><span class="title-s">Téléphone: </span> <span>(+33) 06 17 14 62 82</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Compétences</p>
-                    <span>GIT</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>VS Code</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>PHP</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Java</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Java FX</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Python</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Flask</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>HTML</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>CSS3</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>JAVASCRIPT</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Sqlite</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>PostgresSQL</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        A propos de moi
-                      </h5>
-                    </div>
-                    <p class="lead">
-                      Actuellement en deuxième année de BUT informatique, je suis un étudiant passionné et déterminé, cherchant à approfondir mes compétences en développement. 
-                    </p>
-                    <p class="lead">
-                      Je maîtrise actuellement les langages de programmation tels que Python, Java et PHP. Je maîtrise également des outils tels que GIT et VS Code. J’ai travaillé sur plusieurs projets dans divers domaines lors de ma formation, souvent en équipe, qui sont disponibles sur mon GitLab.
-                    </p>
-                    <p class="lead">
-                      Je suis sérieux et adaptable. Je suis également curieux et persévérant, toujours prêt à relever de nouveaux défis et à apprendre de nouvelles compétences.
-                    </p>
-                    <p class="lead" style="color: white;background-color: red;border: yellow solid 5px; padding: 5px;">
-                      À court terme, je cherche une alternance pour finaliser mon BUT informatique. À long terme, mon objectif est de devenir développeur spécialisé en Python dans une moyenne voir grande ESN.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="infos+" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Quelques informations supplémentaires !
-              </h3>
-              <!-- <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p> -->
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Travail d'équipe</h2>
-                <p class="s-description text-center">
-                  Grâce aux projets dque j'ai déjà réalisé en équipe notemment lors de ma formation de BUT informatique, je sais m'adapter et m'intégrer à une équipe.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Organisation</h2>
-                <p class="s-description text-center">
-                  J'utilise git et les doctrines "Agile" et "CRUD" dans mes projet et m'efforce de les respecter afin d'avooir des projets de forme standardisée.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Évolution</h2>
-                <p class="s-description text-center">
-                  Étant jeune et polivalent j'évolue et aquier de nouvelles compétences rapidement mais je suis surtout <b>passionné</b> et <b>currieux</b>.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">Projets complétés</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">Taille maximale de groupe <br> de DEV intégré</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">participation à es concours de DEV</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Counter Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Mes projets
-              </h3>
-              <p class="subtitle-a">
-                Aussi disponnible sur mon <b><a href="https://github.com/Flyns157" style="color: #0078ff;">Github</a></b> !
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/Capture d'écran 2024-01-10 082747.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/Capture d'écran 2024-01-10 082747.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Pokédex mobile</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Flask</span> / <span class="w-date">5 Oct. 2023</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/Capture d'écran 2024-01-10 082907.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/Capture d'écran 2024-01-10 082907.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Password generator</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Python</span> / <span class="w-date">20 Nov. 2023</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/Capture d'écran 2024-01-10 083115.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/Capture d'écran 2024-01-10 083115.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Marathon du WEB : Scénario</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web (PHP)</span> / <span class="w-date">21 Dec. 2023</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Envoyez moi un message !
-                      </h5>
-                    </div>
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Nom" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Chargement</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Message bien envoyé !</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Envoyer</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Si vous souhaitez prendre contact, c'est ici !
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        Je suis ouvert à toute proposition d'emplois, d'idées, de projets et bien plus encore, alors qu'attendez-vous ?
-                      </p>
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> (62400) Béthune, France</li>
-                        <li><span class="bi bi-phone"></span> (+33) 06 17 14 62 82</li>
-                        <li><span class="bi bi-envelope"></span> matteocuisset@gmail.com</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href="www.linkedin.com/in/mattéo-cuisset"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about-mf sect-pt4 route">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <div class="">
-            <p class="">&copy; Copyright <strong>Cuisset Mattéo</strong>. All Rights Reserved</p>
-            <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-            -->
-              Designed by ME
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="assets/img/photo.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Nom: </span> <span>Cuisset Mattéo</span></p>
+                      <p><span class="title-s">Profile: </span> <span>déveloper fullstack</span></p>
+                      <p><span class="title-s">Email: </span> <span>matteo.cuisset@gmail.com</span></p>
+                      <p><span class="title-s">Téléphone: </span> <span>(+33) 06 17 14 62 82</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-mf">
+                  <p class="title-s">Compétences</p>
+                  <span>GIT</span> <span class="pull-right"></span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>VS Code</span> <span class="pull-right"></span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>PHP</span> <span class="pull-right"></span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>Java</span> <span class="pull-right"></span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>Java FX</span> <span class="pull-right"></span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>Python</span> <span class="pull-right"></span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span>Flask</span> <span class="pull-right"></span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span>HTML</span> <span class="pull-right"></span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <span>CSS3</span> <span class="pull-right"></span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>JAVASCRIPT</span> <span class="pull-right"></span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>Sqlite</span> <span class="pull-right"></span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>PostgresSQL</span> <span class="pull-right"></span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      A propos de moi
+                    </h5>
+                  </div>
+                  <p class="lead">
+                    Actuellement en deuxième année de BUT informatique, je suis un étudiant passionné et déterminé,
+                    cherchant à approfondir mes compétences en développement.
+                  </p>
+                  <p class="lead">
+                    Je maîtrise actuellement les langages de programmation tels que Python, Java et PHP. Je maîtrise
+                    également des outils tels que GIT et VS Code. J’ai travaillé sur plusieurs projets dans divers
+                    domaines lors de ma formation, souvent en équipe, qui sont disponibles sur mon GitLab.
+                  </p>
+                  <p class="lead">
+                    Je suis sérieux et adaptable. Je suis également curieux et persévérant, toujours prêt à relever de
+                    nouveaux défis et à apprendre de nouvelles compétences.
+                  </p>
+                  <p class="lead" style="color: white;background-color: red;border: yellow solid 5px; padding: 10px;border-radius: 15px; text-align: center;">
+                    <b>
+                      À court terme, je cherche une alternance pour finaliser mon BUT informatique. À long terme, mon
+                      objectif est de devenir développeur spécialisé en Python dans une moyenne voir grande ESN.
+                    </b>
+                  </p>
+                  <p class="lead">
+                    <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="/pdf/vf" role="button">Mon CV en Français
+                      <img src="/assets/img/1217938.svg" alt="flèche" style="height: 20px;">
+                    </a></p>
+                    <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="/pdf/en" role="button">Mon CV en Anglais
+                      <img src="/assets/img/1217938.svg" alt="flèche" style="height: 20px;">
+                    </a></p>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </section><!-- End About Section -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- ======= Services Section ======= -->
+  <section id="infos+" class="services-mf pt-5 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Quelques informations supplémentaires !
+            </h3>
+            <!-- <p class="subtitle-a">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p> -->
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Organisation</h2>
+              <p class="s-description text-center">
+                J'utilise git et les doctrines "Agile" et "CRUD" dans mes projet et m'efforce de les respecter afin
+                d'avooir des projets de forme standardisée.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="bi bi-people"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Travail d'équipe</h2>
+              <p class="s-description text-center">
+                Grâce aux projets dque j'ai déjà réalisé en équipe notemment lors de ma formation de BUT informatique,
+                je sais m'adapter et m'intégrer à une équipe.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Évolution</h2>
+              <p class="s-description text-center">
+                Étant jeune et polivalent j'évolue et aquier de nouvelles compétences rapidement mais je suis surtout
+                <b>passionné</b> et <b>currieux</b>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Services Section -->
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- ======= Counter Section ======= -->
+  <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container position-relative">
+      <div class="row">
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="bi bi-check"></i></span>
+            </div>
+            <div class="counter-num">
+              <p data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="1"
+                class="counter purecounter"></p>
+              <span class="counter-text">Projets complétés</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="bi bi-people"></i></span>
+            </div>
+            <div class="counter-num">
+              <p data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1"
+                class="counter purecounter"></p>
+              <span class="counter-text">Taille maximale de groupe <br> de DEV intégré</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="bi bi-award"></i></span>
+            </div>
+            <div class="counter-num">
+              <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"
+                class="counter purecounter"></p>
+              <span class="counter-text">participation à es concours de DEV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- End Counter Section -->
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- ======= Portfolio Section ======= -->
+  <section id="work" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Mes projets
+            </h3>
+            <p class="subtitle-a">
+              Aussi disponnible sur mon <b><a href="https://github.com/Flyns157" style="color: #0078ff;">Github</a></b>
+              !
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img/Capture d'écran 2024-01-10 082747.png" data-gallery="portfolioGallery"
+              class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img/Capture d'écran 2024-01-10 082747.png" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Pokédex mobile</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Flask</span> / <span class="w-date">5 Oct. 2023</span>
+                  </div>
+                  Un site permettant d'avoir des informations sur un pokémon et possédant son proppre moteur de recherche pour vous y aider.
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <a href="/projet/"> <span class="bi bi-plus-circle"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img/Capture d'écran 2024-01-10 082907.png" data-gallery="portfolioGallery"
+              class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img/Capture d'écran 2024-01-10 082907.png" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Password generator</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Python</span> / <span class="w-date">20 Nov. 2023</span>
+                  </div>
+                  Une petite aplication en python permettant de générer des mots de passe. 
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <a href="https://github.com/Flyns157/pasword_generator"> <span class="bi bi-plus-circle"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img/Capture d'écran 2024-01-10 083115.png" data-gallery="portfolioGallery"
+              class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img/Capture d'écran 2024-01-10 083115.png" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Marathon du WEB : Scénario</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Web (PHP)</span> / <span class="w-date">21 Dec. 2023</span>
+                  </div>
+                  Création d'un site web en PHP pour une startup fictive ébergeant des histoire à choix multiples que les utilisateurs peux créer,lire et partager.
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <a href="/projet/"> <span class="bi bi-plus-circle"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img/Capture d'écran 2024-01-10 121259.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img/Capture d'écran 2024-01-10 121259.png" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Flatcraft</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Java</span> / <span class="w-date">4 Oct. 2023</span>
+                  </div>
+                  Un minecraft en 2D avec Java et JavaFX.
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <a href="/projet/"> <span class="bi bi-plus-circle"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img/Capture.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img/Capture.png" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Image to Ascii Image</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Python</span> / <span class="w-date">21 Nov. 2023</span>
+                  </div>
+                  Une librairie python permettant de convertir une image en Ascii art et inversement.
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <a href="https://github.com/Flyns157/ascii_images"> <span class="bi bi-plus-circle"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img/tp62-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img/tp62-3.png" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Raytracing</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Java</span> / <span class="w-date">10 Oct. 2023</span>
+                  </div>
+                  Une application java de rendu d'image 3D par raytracing à partir d'un fichier texte de description d'une scène 3D.
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <a href="https://github.com/DarchevilleThomas/RayTracer"> <span class="bi bi-plus-circle"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Portfolio Section -->
 
-</body>
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
+    style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contact-mf">
+            <div id="contact" class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Envoyez moi un message !
+                    </h5>
+                  </div>
+                  <div>
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <div class="row">
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Nom" required>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email"
+                              required>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet"
+                              required>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                              required></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12 text-center my-3">
+                          <div class="loading">Chargement</div>
+                          <div class="error-message"></div>
+                          <div class="sent-message">Message bien envoyé !</div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                          <button type="submit" class="button button-a button-big button-rouded">Envoyer</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="title-box-2 pt-4 pt-md-0">
+                    <h5 class="title-left">
+                      Si vous souhaitez prendre contact, c'est ici !
+                    </h5>
+                  </div>
+                  <div class="more-info">
+                    <p class="lead">
+                      Je suis ouvert à toute proposition d'emplois, d'idées, de projets et bien plus encore, alors
+                      qu'attendez-vous ?
+                    </p>
+                    <ul class="list-ico">
+                      <li><span class="bi bi-geo-alt"></span> (62400) Béthune, France</li>
+                      <li><span class="bi bi-phone"></span> (+33) 06 17 14 62 82</li>
+                      <li><span class="bi bi-envelope"></span> matteocuisset@gmail.com</li>
+                    </ul>
+                  </div>
+                  <div class="socials">
+                    <ul>
+                      <li><a href="www.linkedin.com/in/mattéo-cuisset"><span class="ico-circle"><i
+                              class="bi bi-linkedin"></i></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Contact Section -->
 
-</html>
+</main><!-- End #main -->
+{% endblock %}
