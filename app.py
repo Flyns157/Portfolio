@@ -1,5 +1,5 @@
 #=============================== IMPORTS ZONE ===============================
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for,send_file,abort
 from flask_wtf import FlaskForm
 from wtforms.validators import DataRequired
 from wtforms import StringField, IntegerField
@@ -27,7 +27,15 @@ def index():
     debug_sys.log('INFO','connection : index')
     return render_template('index.html')
 
-@app.route('/blog')
+@app.route('/projet/<id>')
 def blog():
     debug_sys.log('INFO','connection : blog')
-    return render_template('Blog.html')
+    return abort(404)
+
+@app.route('/pdf/vf')
+def send_pdf_vf():
+    return send_file('public/pdf/CVF.pdf', download_name='CV_CUISSET_Mattéo_vf.pdf')
+
+@app.route('/pdf/en')
+def send_pdf_en():
+    return send_file('public/pdf/CVE.pdf', download_name='CV_CUISSET_Mattéo_en.pdf')
