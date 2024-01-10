@@ -4,6 +4,7 @@ from flask_wtf import FlaskForm
 from wtforms.validators import DataRequired
 from wtforms import StringField, IntegerField
 import requests
+from random import random
 from unidecode import unidecode
 # personnal modules
 import debug_sys
@@ -11,13 +12,11 @@ import debug_sys
 
 #=============================== INIT ZONE ===============================
 app = Flask(__name__, static_url_path='',
-            static_folder='templates',
+            static_folder='public',
             template_folder='templates')
 
-app.secret_key = "MSI c kro bien !"
+app.secret_key = str(round(random(),2)for _ in range(10))
 
-class SearchForm(FlaskForm):
-    recherche = StringField('nom du pokemon', validators=[DataRequired()])
 
 if __name__ == '__main__':
     app.run(debug=True)
