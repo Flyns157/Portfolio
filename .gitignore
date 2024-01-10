@@ -1,0 +1,4 @@
+__pycache__/
+.venv/
+debug_sys.py
+templates/*/
