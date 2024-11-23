@@ -16,7 +16,7 @@ app = Flask(__name__, static_url_path='',
 
 app.secret_key = str(round(random(),2)for _ in range(10))
 
-loggger = Logger()
+loggger = Logger('porfolio.log')
 
 if __name__ == '__main__':
     app.run(debug=True)
